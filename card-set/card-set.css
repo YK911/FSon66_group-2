@@ -1,0 +1,78 @@
+:root {
+  --row-indent: 50px;
+  --column-indent: 30px;
+  --items: 3;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Card set on flex-box layout */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: var(--indent); */
+  row-gap: var(--row-indent);
+  column-gap: var(--column-indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--column-indent) * (var(--items) - 1)) / var(--items));
+}
+
+/**
+  |============================
+  | Gallery section
+  |============================
+*/
+
+.gallery {
+  --items: 4;
+}
+
+.gallery-wrapper {
+  padding: 20px 24px;
+  border: 1px solid red;
+  border-top: none;
+}
+
+/**
+  |============================
+  | Benefits section
+  |============================
+*/
+.benefits-list {
+  --items: 2;
+}
+
+.gallery-title {
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
